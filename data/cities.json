@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "name": "台北市",
+    "value": "Taipei"
+  },
+  {
+    "id": "2",
+    "name": "台南市",
+    "value": "Tainan"
+  },
+  {
+    "id": "3",
+    "name": "桃園市",
+    "value": "Taoyuan"
+  },
+  {
+    "id": "4",
+    "name": "台中市",
+    "value": "Taichung"
+  },
+  {
+    "id": "5",
+    "name": "高雄市",
+    "value": "Kaohsiung"
+  }
+]

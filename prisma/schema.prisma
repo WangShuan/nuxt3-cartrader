@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Car {
+  id          Int       @id @default(autoincrement()) // 設定 id 為 @id 且給予預設值為 自動++
+  name        String
+  price       Int
+  image_url   String
+  seats       String
+  enginesize  String
+  features    String
+  description String
+  make        String
+  city        String
+  listerId    String // user id
+  messages    Message[] // model Message array
+}
+
+model Message {
+  id         Int      @id @default(autoincrement())
+  name       String
+  email      String
+  phone      String
+  memo       String
+  created_at DateTime
+  listingId  Int // model Car id
+  listing    Car      @relation(fields: [listingId], references: [id], onDelete: Cascade) // 獲取 Message.listingId 與 Car.id 相同的那個 Car, 設定 onDelete: Cascade 表示刪除車輛時同時刪掉訊息
+}
