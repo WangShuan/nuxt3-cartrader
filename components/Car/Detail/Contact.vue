@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="createMessage" class="text-center leading-loose px-4 mb-5 md:mb-10">
-    <h3 class="mt-5 text-xl uppercase mb-3 text-emerald-700 font-bold">
+    <h3 class="mt-5 text-xl uppercase mb-3 text-green-700 font-bold">
       contact us
     </h3>
     <p class="mb-3">
@@ -22,7 +22,7 @@
       <label class="mb-2 text-left" for="memo">備註:</label>
       <textarea required v-model="inputs.memo" class="border px-2 py-1 rounded w-full" id="memo" rows="4"></textarea>
     </div>
-    <button :disabled="isDisabled" type="submit" class="disabled:bg-emerald-500 bg-emerald-700 px-10 py-1 rounded text-white">
+    <button :disabled="isDisabled" type="submit" class="disabled:bg-green-500 bg-green-700 px-10 py-1 rounded text-white">
       提交
     </button>
     <p v-if="errorMsg" class="text-red-800">提交失敗：{{ errorMsg }}</p>

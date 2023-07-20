@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed w-screen top-0 z-50 flex justify-between items-center space-x-1 p-4 shadow-md bg-emerald-700 text-white">
+  <header class="fixed w-screen top-0 z-50 flex justify-between items-center space-x-1 p-4 shadow-md bg-green-700 text-white">
     <NuxtLink class="text-3xl font-mono" to="/">CARTRADER</NuxtLink>
     <nav>
       <ul class="flex gap-5">

@@ -8,7 +8,7 @@
         <br>
         ※ {{ car.features }}
       </p>
-      <span class="text-xl md:text-2xl text-right font-bold text-emerald-700">NTD $ {{ car.price }} 萬</span>
+      <span class="text-xl md:text-2xl text-right font-bold text-green-700">NTD $ {{ car.price }} 萬</span>
     </div>
   </div>
 </template>

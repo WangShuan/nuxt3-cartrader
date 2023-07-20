@@ -21,12 +21,12 @@
           <img @click="navigateTo(`/cars/${car.id}-${car.name}`)" class="cursor-pointer	w-100 lg:w-2/5 hover:brightness-75 transition duration-500" :src="car.image_url" alt="" />
           <div class="w-full flex flex-col text-left justify-between p-3 lg:p-5">
             <div class="flex justify-between items-start lg:flex-row flex-col">
-              <h2 @click="navigateTo(`/cars/${car.id}-${car.name}`)" class="cursor-pointer text-xl font-bold hover:text-emerald-700 transition duration-500 lg:w-[70%]">
+              <h2 @click="navigateTo(`/cars/${car.id}-${car.name}`)" class="cursor-pointer text-xl font-bold hover:text-green-700 transition duration-500 lg:w-[70%]">
                 {{ car.name }}
               </h2>
               <div class="mt-3 lg:mt-0">
-                <NuxtLink class="cursor-pointer lg:ml-3 ml-auto rounded px-2 py-1 border border-green-500 bg-green-100 hover:bg-green-300 transition duration-300" :to="`/account/listings/view/${car.id}`">查看回覆</NuxtLink>
-                <button @click="deleteCar(car)" class="cursor-pointer ml-3 rounded px-2 py-1 border border-red-500 bg-red-100 hover:bg-red-300 transition duration-300">刪除</button>
+                <NuxtLink class="cursor-pointer lg:ml-3 ml-auto rounded px-2 py-1 border border-green-700 text-green-700 hover:bg-green-700 hover:text-white transition duration-300" :to="`/account/listings/view/${car.id}`">查看回覆</NuxtLink>
+                <a href="#" @click.prevent="deleteCar(car)" class="cursor-pointer ml-3 rounded px-2 py-1 border border-red-700 text-red-700 hover:bg-red-700 hover:text-white transition duration-300">刪除</a>
               </div>
             </div>
             <p class="mt-3 leading-8">
@@ -34,7 +34,7 @@
               <br>
               ※ {{ car.features }}
             </p>
-            <span class="font-bold text-lg text-right text-emerald-700">NTD $ {{ car.price }} 萬</span>
+            <span class="font-bold text-lg text-right text-green-700">NTD $ {{ car.price }} 萬</span>
           </div>
         </div>
       </li>

@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen overflow-hidden relative w-100 bg-norepeat bg-cover bg-center bg-[url(https://images.unsplash.com/photo-1530685932526-48ec92998eaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80)]">
-    <div class="z-10 absolute w-full h-full bg-emerald-700/30 flex justify-center items-center">
+    <div class="z-10 absolute w-full h-full bg-green-700/20 flex justify-center items-center">
       <div class="text-center pt-[70px]">
         <h1 class="text-3xl md:text-5xl text-white">尋找你的車輛</h1>
         <div class="mt-8 flex flex-wrap justify-center">

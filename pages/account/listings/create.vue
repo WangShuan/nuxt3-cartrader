@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="createCar" class="text-center leading-loose px-4 mb-5 lg:mb-10">
-    <h1 class="mt-5 text-2xl lg:text-4xl uppercase mb-3 text-emerald-700 font-bold">
+    <h1 class="mt-5 text-2xl lg:text-4xl uppercase mb-3 text-green-700 font-bold">
       CREATE CAR
     </h1>
     <div class="flex flex-col mb-3">
@@ -56,7 +56,7 @@
       </div>
       <img class="mx-auto max-w-[400px] mt-5" :src="previewImage" alt="">
     </div>
-    <button :disabled="isDisabled" type="submit" class="disabled:bg-emerald-500 bg-emerald-700 px-10 py-1 rounded text-white">
+    <button :disabled="isDisabled" type="submit" class="disabled:bg-green-500 bg-green-700 px-10 py-1 rounded text-white">
       提交
     </button>
     <p v-if="errorMsg" class="text-red-800">新增失敗：{{ errorMsg }}</p>
